@@ -30,6 +30,7 @@ call plug#begin("~/.vim/plugged")
  Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'kylechui/nvim-surround'
 call plug#end()
 
 if (has("termguicolors"))
@@ -48,3 +49,6 @@ endif
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+map Q :wq<enter>
+map TT :NERDTree<enter>
