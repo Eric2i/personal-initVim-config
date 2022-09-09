@@ -20,17 +20,13 @@ set ttyfast                 " Speed up scrolling in Vim
 " set noswapfile            " disable creating swap file
 " set backupdir=~/.cache/vim " Directory to store backup files.
 
-call plug#begin("~/.vim/plugged")
- " Plugin Section
- Plug 'dracula/vim'
- Plug 'ryanoasis/vim-devicons'
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
- Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
- Plug 'kylechui/nvim-surround'
+call plug#begin()
+Plug 'dracula/vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdcommenter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-surround'
 call plug#end()
 
 if (has("termguicolors"))
